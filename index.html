@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindYourMovie</title>
+    <script src="https://kit.fontawesome.com/d340ad0562.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+     <main class="container">
+        <section class="side-options">
+            <img src="https://wprock.fr/ezoimgfmt/assets.wprock.fr/emoji/joypixels/512/1f37f.png?ezimgfmt=ng%3Awebp%2Fngcb25%2Frs%3Adevice%2Frscb25-1" alt="popcorns">
+
+            <h3 class="genders-title">Generos</h3>
+
+            <section id="genders-options"></section>
+
+            <h3 class="years-title">Años</h3>
+
+            <section class="years-options">
+                <input type="number" id="min-year" min="2013" max="2023" step="1" value="2022">
+                -
+                <input type="number" id="max-year" min="2013" max="2024" step="1" value="2023">
+            </section>
+
+            <button id="search-button">Buscar</button>
+        </section>
+        <section class="information">
+
+            <section class="series-movies-option">
+                <button class="movie-serie active" id="movies"><i class="fa-sharp fa-solid fa-film"></i>Peliculas</button>
+                <button class="movie-serie" id="series"><i class="fa-sharp fa-solid fa-clapperboard"></i>Series</button>
+            </section>
+
+            <h3 class="movie-serie-title">Peliculas Populares</h3>
+
+            <section id="movie-serie"></section>
+            <div class="prev-next">
+                <button class="prev-next-button" id="previus-button"><i class="fa-solid fa-angles-right fa-rotate-180"></i>anterior</button>
+                <button class="prev-next-button" id="next-button">siguiente<i class="fa-solid fa-angles-right"></i></button>
+            </div>
+        </section>
+
+     </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
